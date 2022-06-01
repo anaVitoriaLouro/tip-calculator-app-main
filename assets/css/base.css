@@ -12,4 +12,5 @@
 
 body {
     font-family: 'Space Mono', monospace;
+    background-color: var(--light-grayish-cyan);
 }
