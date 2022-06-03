@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/reset.css">
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -24,24 +24,44 @@
     </div>
 
     <div class="card">
-      <div class="bill-container">
-        Bill
-      </div>
+      <div class="input">
+        <div class="bill-container">
 
-      <div class="tip-container">
-        Select Tip %
-        <!-- 5%
+          <div class="label-container">
+            <label for="bill-inp">Bill</label>
+          </div>
+
+          <div class="inp-container">
+            <input class="inp-text" type="text" names="inp-bill" id="inp-bill" placeholder="0.0">
+            <img src="assets/images/icon-dollar.svg" alt="Dollar Icon">
+          </div>
+        </div>
+
+        <div class="tip-container">
+          <div class="label-container">
+            <label for="tip-inp">Select Tip %</label>
+          </div>
+          <!-- 5%
         10%
         15%
         25%
         50%
         Custom -->
-      </div>
+        </div>
 
-      <div class="people-container">
-        Number of People
+        <div class="people-container">
+          <div class="label-container">
+            <label for="people-inp">Number of People</label>
+            <span class="error-msg">Can't be zero</span>
+          </div>
+
+          <div class="inp-container">
+            <input class="inp-text" type="text" names="inp-people" id="inp-people" placeholder="0">
+            <img src="assets/images/icon-person.svg" alt="Person Icon">
+          </div>
+        </div>
       </div>
-<!-- 
+      <!-- 
       Tip Amount
       / person
 
