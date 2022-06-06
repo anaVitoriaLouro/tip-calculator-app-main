@@ -76,3 +76,41 @@ label {
      left: 2rem;
      top: 1.5rem;
  }
+
+ /* Select Tip % */
+
+ .tip-options-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+    
+ }
+
+ .tip-options {
+     background-color: var(--very-dark-cyan);
+     width: 46%;
+     border-radius: 0.5rem;
+     font-size: 2.4rem;
+     text-align: center;
+     color: var(--white);
+     padding: 1.2rem;
+     margin: 1rem 1rem 1rem 0;
+ }
+
+.active-tip {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan)
+}
+
+ .inp-custom-tip {
+     background-color: var(--light-grayish-cyan);
+     border: none;
+     border-radius: .5rem;
+     text-align: center;
+     font-size: 2.4rem;
+     font-weight: 700;
+     width: 46%;
+     padding: 1.2rem 2.4rem;
+     font-family: 'Space Mono', monospace;
+ }
