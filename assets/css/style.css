@@ -109,3 +109,29 @@ label {
     text-align: center;
 }
  
+.output {
+    background-color: var(--very-dark-cyan);
+    width: 100%;
+    border-radius: 2.5rem;
+    padding: 2.2rem;
+    margin-top: 2rem;
+}
+
+.tip-amount-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.4rem 0;
+}
+
+.output-title {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.per-person {
+    color: var(--dark-grayish-cyan);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
