@@ -24,7 +24,7 @@
     </div>
 
     <div class="card">
-      <div class="input">
+      <section class="input">
         <div class="bill-container">
 
           <div class="label-container">
@@ -49,7 +49,8 @@
             <div class="tip-options">25%</div>
             <div class="tip-options">50%</div>
 
-            <input class="inp-text inp-custom-tip" type="text" names="inp-custom-tip" id="inp-custom-tip" placeholder="Custom">
+            <input class="inp-text inp-custom-tip" type="text" names="inp-custom-tip" id="inp-custom-tip"
+              placeholder="Custom">
           </div>
 
         </div>
@@ -65,15 +66,25 @@
             <img src="assets/images/icon-person.svg" alt="Person Icon">
           </div>
         </div>
-      </div>
-      <!-- 
-      Tip Amount
-      / person
+      </section>
 
-      Total
-      / person
+      <section class="output">
+        <div class="tip-amount-container">
+         <span>Tip Amount
+         / person</span>
+         <input class="tip-value" type="text" names="tip-value" id="tip-value" placeholder="0.0">
+        </div>
 
-      Reset -->
+        <div class="total-price-container">
+         <span>Total
+          / person</span>
+          <input class="total-value" type="text" names="total-value" id="total-value" placeholder="0.0">
+        </div>
+
+        <button>Reset</button>
+
+      </section>
+
     </div>
   </main>
 
