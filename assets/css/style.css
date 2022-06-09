@@ -117,10 +117,22 @@ label {
     margin-top: 2rem;
 }
 
+.output-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    display:inline-block;
+    text-align: end;
+    font-size: 2.4rem;
+    color: var(--strong-cyan);
+
+}
+
 .tip-amount-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     margin: 1.4rem 0;
 }
 
