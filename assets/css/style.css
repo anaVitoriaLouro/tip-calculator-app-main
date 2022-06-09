@@ -119,13 +119,18 @@ label {
 
 
 .tip-amount-price-container {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
     margin: 1.4rem 0;
 }
 
 .value {
     display:inline-block;
+    width: 100px;
+    height: 50px;
     text-align: end;
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: var(--strong-cyan);
 }
 
@@ -142,12 +147,9 @@ label {
 }
 
 .reset-button {
-    width: 100%;
-    padding: 1.3rem;
+    margin-top: 1.4rem;
+    text-align: center;
+    padding: 1.2rem;
     background-color: var(--strong-cyan);
-    border: none;
-    border-radius: .5rem;
-    font-size: 2.5rem;
-    font-weight: 700;
     color: var(--very-dark-cyan);
 }
