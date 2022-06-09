@@ -132,6 +132,7 @@ label {
     text-align: end;
     font-size: 3rem;
     color: var(--strong-cyan);
+    margin-left: 9rem;
 }
 
 .output-title {
