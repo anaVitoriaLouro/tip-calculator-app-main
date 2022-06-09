@@ -117,9 +117,9 @@ label {
     margin-top: 2rem;
 }
 
-.output-content {
-    display: flex;
-    flex-direction: column;
+
+.tip-amount-price-container {
+    margin: 1.4rem 0;
 }
 
 .value {
@@ -127,13 +127,6 @@ label {
     text-align: end;
     font-size: 2.4rem;
     color: var(--strong-cyan);
-
-}
-
-.tip-amount-container {
-    display: flex;
-    flex-direction: column;
-    margin: 1.4rem 0;
 }
 
 .output-title {
@@ -150,11 +143,11 @@ label {
 
 .reset-button {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.3rem;
     background-color: var(--strong-cyan);
     border: none;
     border-radius: .5rem;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--very-dark-cyan);
 }
