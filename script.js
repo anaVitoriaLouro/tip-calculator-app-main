@@ -104,4 +104,11 @@ function setPeopleValue(){
         }
     }
 
+function reset(){
+    bill.value = '0.0';
+    setBillValue();
 
+    tip_options[2].click();
+    people.value = '1';
+    setPeopleValue();
+}
