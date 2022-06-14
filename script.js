@@ -91,4 +91,17 @@ function setPeopleValue(){
         setTimeout(function(){
             errorMsg.classList.remove("show-error-msg");}, 3000);
         }
+
+        calculateTip();
     }
+
+    function calculateTip(){
+        if(peopleValue >=1) {
+            let tipAmount = billValue * tipValue / peopleValue;
+            let total = billValue * (tipValue + 1) / peopleValue;
+            results[0].innerHTML = '$' + tipAmount.toFixed(2);
+            results[1].innerHTML = '$' + total.toFixed(2);
+        }
+    }
+
+
