@@ -46,15 +46,30 @@ function setBillValue(){
 }
 
 
-
 function activeTipOption(event) {
     tip_options.forEach(tip_button => {
-        tip_button.classList.remove("active")
-    });
+        tip_button.classList.remove("active");
+    
 
-    if(event.target.classList.contains("tip-options")) {
-        event.target.classList.add("active");
-    } else {
-        event.target.parentElement.classList.add("active");
-    }
+    if(event.target.innerHTML == tip_button.innerHTML) {
+        tip_button.classList.add("active");
+        tipValue = parseFloat(tip_button.innerHTML)/100;
+    };
+});
+
+//clear custom tip
+tipCustom.value = '';
+
+calculateTip();
 }
+
+function setTipCustomValue(){
+    if(!validateInt(tipCustom.value)){
+        tipCustom.value = tipCustom.value.substring(0, tipCustom.value.lenght-1);
+    }
+
+    tipValue = parseFloat(tipCustom.value/100);
+
+    tip_options.forEach(tip_button => {
+        tip_button.classList.remove("active");
+});
