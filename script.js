@@ -6,10 +6,6 @@ const errorMsg = document.querySelector(".error-msg")
 const total = document.querySelectorAll(".value");
 const reset_button = document.querySelector(".reset-button");
 
-let billValue = 0.0; //default value
-let tipValue = 0.15; //default value
-let peopleValue = 1;
-
 
 bill.addEventListener('input', setBillValue);
 tip_options.forEach(tip_button => {
@@ -18,6 +14,10 @@ tip_options.forEach(tip_button => {
 tipCustom.addEventListener('input', setTipCustomValue);
 people.addEventListener('input', setPeopleValue);
 reset_button.addEventListener('click', reset);
+
+let billValue = 0.0; //default value
+let tipValue = 0.15; //default value
+let peopleValue = 1;
 
 
 function validateFloat(s){
