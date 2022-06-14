@@ -1,4 +1,4 @@
-const bill = document.getElementById(".inp-bill");
+const bill = document.getElementById("inp-bill");
 const tip_options = document.querySelectorAll(".tip-options");
 const tipCustom = document.getElementById("inp-custom-tip");
 const people = document.getElementById("inp-people");
@@ -15,9 +15,37 @@ bill.addEventListener('input', setBillValue);
 tip_options.forEach(tip_button => {
     tip_button.addEventListener('click', (activeTipOption));
 });
-tipCustom.addEventListener('input', setTip´CustomValue);
+tipCustom.addEventListener('input', setTipCustomValue);
 people.addEventListener('input', setPeopleValue);
 reset_button.addEventListener('click', reset);
+
+
+function validateFloat(s){
+    var rgx  = /^[0-9]*\.?[0-9]*$/;
+    return s.match(rgx);
+}
+
+function validateInt(s){
+    var rgx = /^[0-9]*$/;
+    return s.match(rgx);
+}
+
+
+function setBillValue(){
+    if (bill.value.includes(',')) {
+        bill.value = bill.value.replace(',', '.');
+    }
+
+    if(!validateFloat(bill.value)){
+        bill.value = bill.value.substring(0, bill.value.lenght-1);
+    }
+
+    billValue = parseFloat(bill.value);
+
+    calculateTip();
+}
+
+
 
 function activeTipOption(event) {
     tip_options.forEach(tip_button => {
