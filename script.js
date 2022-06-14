@@ -73,3 +73,22 @@ function setTipCustomValue(){
     tip_options.forEach(tip_button => {
         tip_button.classList.remove("active");
 });
+
+    if(tipCustom.value !== '') {
+        calculateTip();
+    }
+}
+
+function setPeopleValue(){
+    if(!validateInt(people.value)){
+        people.value = people.value.substring(0, people.value.lenght-1);
+    }
+
+    peopleValue = parseFloat(people.value);
+
+    if(peopleValue <= 0) {
+        errorMsg.classList.add("show-error-msg");
+        setTimeout(function(){
+            errorMsg.classList.remove("show-error-msg");}, 3000);
+        }
+    }
